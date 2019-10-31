@@ -5,7 +5,7 @@ This repository can be easily used as starting point (boilerplate) for project b
 
 Just download repository and start your new project.   
 
-##Screenshots
+## Screenshots
 ![screenshot-login](./resources/sample-react-app-login.png)
 
 ![screenshot-data-table](./resources/sample-react-app-data-table.png)
@@ -23,7 +23,7 @@ Just download repository and start your new project.
     * [dotenv](https://github.com/motdotla/dotenv) (Loads environment variables from .env for nodejs projects)
     * [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) (JsonWebToken implementation for node.js)
 
-###Frontend
+### Frontend
 * [React](https://reactjs.org/) (A JavaScript library for building user interfaces)
     * [react-app-rewired](https://github.com/timarney/react-app-rewired) (just to be able to use LESS with Ant design / theming)
     * [Ant design](https://ant.design) (nice and clear web components and layout solution)
@@ -57,7 +57,7 @@ cd frontend
 ./docker-run.bat
 ```
 
-###Notes
+### Notes
 Docker configs are done on Windows platform with downfalls that comes with this setup (Docker toolbox). Correct the `docker-compose.yml` with appropriate paths in volumes (replace absolute paths with relative):
 ```
 ...
