@@ -1,0 +1,23 @@
+/*@import '~antd/dist/antd.css';*/
+
+.container {
+  display: grid;
+  justify-items: center;
+}
+
+.login-form {
+  width: 400px;
+  padding: 25px;
+  border: 1px #cecece solid;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+}
+
+.login-form .login-form-button {
+  float: right;
+}
+
+.register-link {
+  float: left;
+  margin: 10px 0;
+}

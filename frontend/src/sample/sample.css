@@ -1,0 +1,45 @@
+.ant-table-row {
+  background-color: white;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-content {
+  height: 250px;
+  margin-top: -16px;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane {
+  background: #fff;
+  padding: 16px;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar {
+  border-color: #fff;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+  border-color: #fff;
+  background: #fff;
+}
+
+.buttonsContainer {
+  box-sizing: border-box;
+  margin: 10px 0;
+  height: 40px;
+}
+
+.leftButtons {
+  float: left;
+}
+
+.rightButtons {
+  float: right;
+}
+
+.ant-empty-normal {
+  margin: 0 8px;
+}

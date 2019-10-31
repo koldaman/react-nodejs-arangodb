@@ -1,0 +1,41 @@
+/*@import '~antd/dist/antd.css';*/
+
+.ant-layout-sider .logo {
+  height: 28px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+  text-align: center;
+  padding: 0px;
+}
+
+.logo {
+  font-weight: normal;
+  font-size: x-large;
+}
+
+.logo .accent {
+  font-weight: bolder;
+  color: #1fcaf6;
+}
+
+.header-block {
+  display: flex;
+  flex-flow: row-reverse;
+  padding: 0 15px;
+}
+
+.user-container {
+  padding: 0 10px;
+}
+
+.username {
+  padding-left: 10px;
+}
+
+.ant-dropdown-button {
+  margin: 0 8px 8px 0;
+}
+
+.ant-btn-group .ant-btn {
+  margin: 0px;
+}

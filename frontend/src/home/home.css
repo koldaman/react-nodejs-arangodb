@@ -1,0 +1,5 @@
+/*@import '~antd/dist/antd.css';*/
+
+button.ant-btn {
+  margin: 5px;
+}

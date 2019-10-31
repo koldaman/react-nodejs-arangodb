@@ -1,0 +1,54 @@
+version: '3.7'
+
+services:
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - '//C/private/sample/frontend:/app'
+      - '//C/private/sample/frontend/node_modules'
+      - '//C/private/sample/frontend/package.json'
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    links:
+      - "api"
+    depends_on:
+      - "api"
+
+  api:
+    container_name: api
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    volumes:
+      - '//C/private/sample/api:/app'
+      - '//C/private/sample/api/node_modules'
+      - '//C/private/sample/api/package.json'
+    ports:
+      - '5000:5000'
+    links:
+      - "arangodb"
+    depends_on:
+      - "arangodb"
+    restart: on-failure
+
+  arangodb:
+    container_name: arangodb
+    build:
+      context: ./arangodb
+      dockerfile: Dockerfile
+    ports:
+      - 8529:8529
+    environment:
+      - ARANGO_ROOT_PASSWORD=passwd
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://arangodb:8529"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
