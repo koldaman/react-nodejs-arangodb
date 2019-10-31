@@ -34,7 +34,7 @@ Just download repository and start your new project.
     * [protected-routes](https://tylermcginnis.com/react-router-protected-routes-authentication/) (auth protected routes in react)
     * Login with Google account (alternative login method next to pure application login for registered users)
     
-###Container (startup process)
+### Container (startup process)
 Application is containerized with [Docker](https://www.docker.com/) and can be started just with `docker-compose` command:
 ```
 docker-compose build
